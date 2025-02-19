@@ -13,6 +13,300 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/41f6d0ebd8.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+#header{    
+    width: 100%;
+    height: 549px;
+    background-color:grey;
+    display: flexbox;
+}
+.photo{
+    width: 100%;
+    height: 100%;
+    background: url(https://github.com/AkkiDevlOops/Akkifiles/blob/main/Spiderman-1.jpg?raw=true);
+    background-size: cover;
+    opacity: 0.7;
+    animation-name: photodown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: initial;
+}
+@keyframes photodown {
+0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.photo:hover{
+    opacity: 1;
+}
+
+.tagline{
+    color: rgb(168, 25, 25);
+    font-family: "Sigmar", serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    position: fixed;
+    left: 40px;
+    line-height: 100px;  
+    z-index: 1;    
+}
+
+.language{
+    position: fixed;
+    top: 20px;
+    width: 125px;
+    right: 160px;
+    background-color: antiquewhite;
+    line-height: 20px;
+    text-align: center; 
+    color: black;
+    margin-right: 5px;
+    border: 2px solid grey;
+    border-radius: 12%;
+    transition: all 2 linear;
+    }
+
+.contact button{
+    position: fixed;
+    top: 20px;
+    width: 125px;
+    right: 20px;
+    background-color: antiquewhite;
+    line-height: 20px;
+    text-align: center;
+    color: black;
+    border: 2px solid grey;
+    border-radius: 12%;
+}
+
+.language:hover{
+    box-shadow: 2px 2px 8px rgb(110, 11, 11);
+    transform: scale(1.1);
+}
+
+.contact button:hover{
+    box-shadow: 2px 2px 10px rgb(110, 11, 11);
+    transform: scale(1.1);
+}
+
+.name{
+    position: absolute;
+    top: 20px;
+    right: 75px;
+    margin-top: 200px;
+    width: 350px;
+    height: 50px;
+    color: white;
+    font-size: 1cm;
+    text-align: center;
+    
+    animation-name: namedown;
+    animation-duration: 0.5s;
+    animation-timing-function: initial;
+    animation-direction: alternate;
+    animation-iteration-count: initial;
+    animation-delay: 2s;
+
+}
+
+@keyframes namedown{
+    from{
+        position: absolute;
+        top: 10px;
+    }
+    to{
+        position: absolute;
+        top: 20px;
+    }
+}
+
+.description{
+    
+    position: absolute;
+    top: 300px;
+    right: 75px;
+    height: 150px;
+    text-align: center;
+    width: 400px;
+    font-size: 0.6cm;
+    background-color: black;
+    color: white;
+    }
+
+.description:hover{
+    text-shadow: 5px 5px 8px goldenrod;
+}
+
+.name:hover{
+    text-shadow: 10px 10px 8px grey;
+}
+
+.tagline{
+    text-shadow: 8px 8px 8px rgb(134, 2, 2) ;
+}
+
+h1{
+    color: azure;
+    position: absolute;
+    left: 100px;
+    z-index: 0;
+
+}
+
+.cards{
+    font-family: "Montserrat", serif;
+    text-shadow: goldenrod;
+
+}
+
+.html{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    left: 300px;
+    top: 100px;
+    background-color: grey;
+    border: 2px solid white;
+    display: inline-block;
+}
+
+.html #img{
+    padding: 0px;
+    background: url(https://blog.logrocket.com/wp-content/uploads/2023/09/Comparing-Popover-API-dialog-element.png);
+    background-size: contain;
+    width: 100%;
+    height: 60%;
+}
+
+.html heading{
+    padding: 2px;
+    position: absolute;
+    top: 65%;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: rgb(56, 16, 56);
+    font-size: 1cm;
+}
+
+.html content{
+    padding: 2px;
+    position: absolute;
+    top: 85%;
+    color: white;
+    background-color: rgb(56, 16, 56);
+}
+
+.html:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 8px goldenrod;
+}
+
+.css{
+    
+    position: relative;
+    left: 450px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    top: 100px;
+    background-color: rgb(68, 67, 68);
+    border: 2px solid white;
+    display: inline-block;
+}
+
+.css #img1{
+    background: url(https://blog.logrocket.com/wp-content/uploads/2023/06/css-full-page-background.png);
+    background-size: contain;
+    width: 100%;
+    height: 60%;
+}
+
+.css heading{
+    margin: 15px;
+    padding: 2px;
+    font-size: 1cm;
+    position: absolute;
+    top: 60%;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: rgb(56, 16, 56);
+}
+
+.css content{
+    margin: 15px;
+    padding: 2px;
+    position: absolute;
+    top: 80%;
+    color: white;
+    background-color: rgb(56, 16, 56);
+}
+
+.css:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 8px goldenrod;
+}
+
+
+
+
+
+
+.foot{
+    
+    margin: 00;
+    padding: 15px;
+    position: absolute;
+    top: 1000px;
+    width: 100vi;
+    height: 120px;
+    text-align: left;
+    font-size: 1cm;
+    color: white;
+    display: inline-block;
+}
+
+.foot i{
+    margin: 15px;
+    position: absolute;
+    top: 70%;
+    color:rgb(36, 38, 179);
+    display: inline-block;
+}
+
+#igbutton{
+    position: absolute;
+    left: 25%;
+   font-size: 2cm;
+}
+
+#twitterbutton{
+    position: absolute;
+    left:50% ;
+    font-size: 2cm;
+}
+
+#linkedinbutton{
+    position: absolute;
+    left: 75%;
+    font-size: 2cm;
+}
+
+
+    </style>
 
 
 </head>
